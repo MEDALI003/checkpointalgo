@@ -1,0 +1,26 @@
+ALGORITHM know
+VAR
+v : INTEGER := 0;
+n : INTEGER:=0;
+i : INTEGER:=0;
+w : INTEGER:=0;
+ch:string
+BEGIN
+read(ch)
+ WHILE (ch[len(ch)-1] != 0 ) DO
+	read(ch)
+ END_WHILE
+for 0 to length(ch)-1 do 
+ 	if (ch[i]>='0' and ch[i]<='9')then
+		n=n+1
+	if (ch[i]={'a','e','o','u'})then
+		v=v+1
+	end if
+end for
+i=0
+while(i<ch.length-2)do
+i=i+1
+if ch[i]=' ' then
+	w=w+1
+end if
+end while
